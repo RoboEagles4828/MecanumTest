@@ -1,5 +1,6 @@
 package frc.robot;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
 class DriveTrain {
@@ -28,5 +29,9 @@ class DriveTrain {
         return output;
     }
 
-    
+    public void drive(int x, int y, int t) {
+        // TODO: You wanna put these 3 parameters into math, which spits out the 4 speeds for the wheels
+        // Then put those speeds into the actual wheels
+        // Example: motor.set(ControlMode.PercentOutput, .5);
+    }
 }
