@@ -14,15 +14,16 @@ class DriveTrain {
         // TODO: Do the same for the rest of the motors
     }
 
-    private int[] math(double x, double y, double t) {
-        int[] output = {0,0,0,0};
-        output[0] = y -x +t;
-        output[1] =  y +x -t;
-        output[2]= y +x +t;
-        output[3] = y -x -t;
-        // TODO: The math for this is:
+    double[] math(double x, double y, double t) {
+        double[] output = {0,0,0,0};
+        output[0] = (y -x +t)/3;
+        output[1] =  (y +x -t)/3;
+        output[2]= (y +x +t)/3;
+        output[3] = (y -x -t)/3;
+
+        // The math for this is:
         // y is added directly to all 4 motors.
-        // x is transferred negatively to the front two motors and additively to the back two.
+        // x is transferred negatively to the front left and back right and additively to the back left and front right.
         // t (twist) is tranferred additively to the left 2 motors and negatively to the right two motors
         // After doing all this crap normalize everything to 0-1.
 
