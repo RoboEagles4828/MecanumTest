@@ -9,7 +9,7 @@ public class Robot extends TimedRobot {
   Joystick joy;
   @Override
   public void robotInit() {
-	  dt = new DriveTrain(0,1,2,3);
+	  dt = new DriveTrain(1,2,3,4);
 	  joy = new Joystick(0);
   }
 
