@@ -11,7 +11,6 @@ class DriveTrain {
         this.frontRight = new TalonSRX(frontRight);
         this.backLeft = new TalonSRX(backLeft);
         this.backRight = new TalonSRX(backRight);
-        // TODO: Do the same for the rest of the motors
     }
 
     double[] math(double x, double y, double t) {
@@ -31,7 +30,7 @@ class DriveTrain {
     }
 
     public void drive(int x, int y, int t) {
-        // TODO: You wanna put these 3 parameters into math, which spits out the 4 speeds for the wheels
+        // You wanna put these 3 parameters into math, which spits out the 4 speeds for the wheels
         // Then put those speeds into the actual wheels
         // Example: motor.set(ControlMode.PercentOutput, .5);
     }
