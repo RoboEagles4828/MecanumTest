@@ -11,7 +11,6 @@ class DriveTrain {
         this.frontRight = new TalonSRX(frontRight);
         this.backLeft = new TalonSRX(backLeft);
         this.backRight = new TalonSRX(backRight);
-        // Do the same for the rest of the motors
     }
 
     double[] math(double x, double y, double t) {
