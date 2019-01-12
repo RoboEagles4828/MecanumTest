@@ -10,7 +10,7 @@ class DriveTrain {
         // TODO: Do the same for the rest of the motors
     }
 
-    public int[] math(double x, double y, double t) {
+    private int[] math(double x, double y, double t) {
         int[] output = {0,0,0,0};
 
         // TODO: The math for this is:
@@ -21,4 +21,6 @@ class DriveTrain {
 
         return output;
     }
+
+    
 }
